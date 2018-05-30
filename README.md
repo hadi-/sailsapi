@@ -13,15 +13,21 @@ a [Sails v1](https://sailsjs.com) application
 + [Professional / enterprise options](https://sailsjs.com/enterprise)
 
 
-### Version info
+### How to run
 
-This app was originally generated on Sun May 27 2018 14:01:25 GMT+0700 (WIB) using Sails v1.0.2.
+```
+* create database
+* import sailsdb.sql into new database
+* clone git@github.com:hadi-/sailsapi.git
+* cd sailsapi
+* yarn install
+* sails lift --prod
+```
 
-<!-- Internally, Sails used [`sails-generate@1.15.26`](https://github.com/balderdashy/sails-generate/tree/v1.15.26/lib/core-generators/new). -->
+the rest api should run on port `1337`
 
+`http://localhost:1337`
 
-
-<!--
-Note:  Generators are usually run using the globally-installed `sails` CLI (command-line interface).  This CLI version is _environment-specific_ rather than app-specific, thus over time, as a project's dependencies are upgraded or the project is worked on by different developers on different computers using different versions of Node.js, the Sails dependency in its package.json file may differ from the globally-installed Sails CLI release it was originally generated with.  (Be sure to always check out the relevant [upgrading guides](https://sailsjs.com/upgrading) before upgrading the version of Sails used by your app.  If you're stuck, [get help here](https://sailsjs.com/support).)
--->
-
+some docs
+## postman collection
+import `reataurant.postman_collection` into postman to try the method GET, POST, PUT, DELETE
