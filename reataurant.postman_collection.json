@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "0e8971f9-5a68-4e8c-841b-f7bb2acb6131",
+		"name": "gl",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all resto name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:1337/resto/",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"resto",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post resto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "warsun",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "open",
+							"value": "2018-05-23",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "close",
+							"value": "2018-05-27",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1337/resto",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"resto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:1337/category",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE category",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:1337/category/9",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"category",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET by id category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:1337/category/getone?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"category",
+						"getone"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET resto by category id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:1337/category/getone?id=8",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"category",
+						"getone"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update resto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "hokbens",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "open",
+							"value": "2018-05-21",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "close",
+							"value": "2018-05-27",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "13",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "category_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1337/resto/13",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"resto",
+						"13"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
